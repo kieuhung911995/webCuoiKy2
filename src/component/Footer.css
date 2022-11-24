@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact {
+  width: 18%;
+  float: right;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.created {
+  margin-left: 40px;
+}

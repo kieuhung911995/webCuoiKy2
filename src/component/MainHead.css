@@ -1,0 +1,18 @@
+.main-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.trades {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+.bets {
+  margin-right: 40px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

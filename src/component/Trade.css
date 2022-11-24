@@ -1,0 +1,21 @@
+.trade {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+.trade-items {
+  width: 50%;
+  height: fit-content;
+  border-style: solid;
+  border-color: gray;
+}
+.img-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.value {
+  position: absolute;
+}

@@ -1,0 +1,56 @@
+.matchComponent {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.match-header {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 12px;
+}
+.match-main {
+  background-color: #fff;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.match {
+  margin-right: 40px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatars {
+  width: 17%;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.width1 {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.width2 {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.strong {
+  font-weight: 600;
+}
+.small {
+  font-size: 13px;
+  color: gray;
+}
+.rate1 {
+  display: flex;
+  justify-content: flex-end;
+}
