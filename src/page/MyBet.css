@@ -1,0 +1,118 @@
+.myBet {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.MyBetComponent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgba(32, 185, 32, 0.315);
+  margin-bottom: 2px;
+}
+.user-bet {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.user-balance {
+  width: 30%;
+}
+.match-bet {
+  width: 50%;
+}
+.matchComponentBet {
+  margin-bottom: 20px;
+}
+.MyBetComponent-header {
+  color: gray;
+  padding-bottom: 10px;
+}
+.MyBetComponent-info {
+  font-size: 20px;
+}
+.match-header {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 12px;
+}
+.match-main {
+  background-color: #fff;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatars {
+  width: 17%;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.width1 {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.width2 {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.strong {
+  font-weight: 600;
+}
+.small {
+  font-size: 13px;
+  color: gray;
+}
+.rate1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bet-header {
+  display: flex;
+  justify-content: space-around;
+}
+.bet-main {
+  width: 49%;
+  text-align: center;
+}
+.user-balance {
+}
+.balance-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(32, 185, 32, 0.582);
+  padding-left: 20px;
+  font-weight: 600;
+}
+.flex-balance {
+  background-color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.balance-comp {
+  line-height: 50px;
+}
+.balance-text {
+  color: gray;
+}
+.balance-value {
+  font-size: 30px;
+}

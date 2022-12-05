@@ -1,7 +1,9 @@
+.bet-detail {
+}
+
 .matchComponent {
   width: 49%;
   margin-bottom: 20px;
-  cursor: pointer;
 }
 .match-header {
   background-color: #f1f1f1;
@@ -15,14 +17,6 @@
   background-color: #fff;
   height: 70px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.match {
-  margin-right: 40px;
-  width: 70%;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -55,8 +49,23 @@
   display: flex;
   justify-content: flex-end;
 }
-.spinner {
-  position: absolute;
-  top: 60%;
-  left: 60%;
+
+.bet-header {
+  display: flex;
+  justify-content: space-around;
+}
+.bet-main {
+  width: 49%;
+  text-align: center;
+  cursor: pointer;
+}
+.place-bet {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.close {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }

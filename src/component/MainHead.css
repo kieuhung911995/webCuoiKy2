@@ -5,14 +5,49 @@
   margin-bottom: 10px;
 }
 .trades {
-  display: flex;
-  justify-content: flex-start;
   margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .bets {
-  margin-right: 40px;
+  margin-right: 53px;
   width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.bet {
+  margin-left: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bet-date {
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+}
+.true-option {
+  background-color: green;
+  color: white;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  padding: 7px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+.false-option {
+  color: gray;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  padding: 7px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+.false-option:hover {
+  cursor: pointer;
+  background-color: rgba(0, 128, 0, 0.342);
 }

@@ -12,12 +12,21 @@
   width: 30%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.my-bet {
+  width: 23%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 .login {
   margin-right: 17px;
+  cursor: pointer;
 }
 .logo-item {
-  object-fit: fill;
   width: 30%;
   height: auto;
+  cursor: pointer;
 }
