@@ -24,6 +24,7 @@ function Header() {
       key: "2",
       onClick: () => {
         display.setIsLogin(false);
+        localStorage.clear();
         navigate("/");
       },
     },

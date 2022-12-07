@@ -61,61 +61,66 @@ export default function Detail() {
     setIsModalOpen(false);
   };
   return (
-    <div className="bet-detail">
+    <div>
       {!isLoading ? (
-        <div className="matchComponent">
-          <div className="match-header">
-            <div className="small">{match.dateTime}</div>
-            <div className="strong">{match.tourment}</div>
-          </div>
-          <div className="match-main">
-            <div className="width1" onClick={() => handleBet(match.teams[0])}>
-              <div className="teams-rates team1">
-                <div className="strong">{match.teams[0]}</div>
-                <div className="small rate1">
-                  <>x{match.rates[0]}</>
-                </div>
-              </div>
-              <img
-                src={match.avatars[0]}
-                alt="team1Logo"
-                className="avatars"
-              ></img>
+        <div className="center">
+          <div className="matchComponent-detail">
+            <div className="match-header">
+              <div className="small">{match.dateTime}</div>
+              <div className="strong">{match.tourment}</div>
             </div>
-            <div className="BO">BO{match.BO}</div>
-            <div className="width2" onClick={() => handleBet(match.teams[1])}>
-              <img
-                src={match.avatars[1]}
-                alt="team2Logo"
-                className="avatars"
-              ></img>
-              <div className="teams-rates team2">
-                <div className="strong">{match.teams[1]}</div>
-                <div className="small">x{match.rates[1]}</div>
+            <div className="match-main">
+              <div className="width1" onClick={() => handleBet(match.teams[0])}>
+                <div className="teams-rates team1">
+                  <div className="strong">{match.teams[0]}</div>
+                  <div className="small rate1">
+                    <>x{match.rates[0]}</>
+                  </div>
+                </div>
+                <img
+                  src={match.avatars[0]}
+                  alt="team1Logo"
+                  className="avatars"
+                ></img>
+              </div>
+              <div className="BO">BO{match.BO}</div>
+              <div className="width2" onClick={() => handleBet(match.teams[1])}>
+                <img
+                  src={match.avatars[1]}
+                  alt="team2Logo"
+                  className="avatars"
+                ></img>
+                <div className="teams-rates team2">
+                  <div className="strong">{match.teams[1]}</div>
+                  <div className="small">x{match.rates[1]}</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       ) : (
-        <SpinnerCircular />
+        <SpinnerCircular className="spinner-center" />
       )}
       {!display.isLogin ? (
-        <div className="bet-main" onClick={() => navigate("/login")}>
-          To make a bet please sign in
+        <div className="bet-request" onClick={() => navigate("/login")}>
+          <div className="bet-request-text">To make a bet please sign in</div>
         </div>
       ) : !!nameTeam ? (
-        <div className="bet-main">
-          <div className="bet-header">
-            <div>Win {nameTeam}</div>
-            <input
-              placeholder="$"
-              type="number"
-              value={betValue}
-              onChange={(e) => setBetValue(e.target.value)}
-            ></input>
-          </div>
-          <div className="place-bet" onClick={showModal}>
-            Place bet
+        <div className="bet-table">
+          <div className="bet-table-content">
+            <div className="bet-header">
+              <div style={{ fontSize: "20px" }}>Win: {nameTeam}</div>
+              <input
+                placeholder="$"
+                type="number"
+                value={betValue}
+                onChange={(e) => setBetValue(e.target.value)}
+                style={{ width: "30%", height: "60%" }}
+              ></input>
+            </div>
+            <div className="place-bet" onClick={showModal}>
+              Place bet
+            </div>
           </div>
           <Modal
             title="Confirm your bet"
@@ -128,7 +133,9 @@ export default function Detail() {
           </Modal>
         </div>
       ) : (
-        <div className="bet-main">Click the team you want to bet</div>
+        <div className="bet-request">
+          <div className="click-request">Click the team you want to bet on</div>
+        </div>
       )}
     </div>
   );

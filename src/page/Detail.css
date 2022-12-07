@@ -1,8 +1,14 @@
-.bet-detail {
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
-
-.matchComponent {
-  width: 49%;
+.spinner-center {
+  position: absolute;
+  left: 50%;
+}
+.matchComponent-detail {
+  width: 50%;
   margin-bottom: 20px;
 }
 .match-header {
@@ -31,12 +37,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  cursor: pointer;
 }
 .width2 {
   width: 45%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 }
 .strong {
   font-weight: 600;
@@ -53,19 +61,60 @@
 .bet-header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  padding-bottom: 80px;
+  padding-top: 20px;
 }
-.bet-main {
-  width: 49%;
-  text-align: center;
+.bet-request {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bet-request-text {
+  width: 20%;
+  height: 30px;
+  background-color: rgb(8, 110, 8);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+}
+.bet-request-text:hover {
+  background-color: rgb(25, 175, 25);
+}
+.click-request {
+  color: green;
+  font-size: 20px;
 }
 .place-bet {
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  height: 30px;
+}
+.place-bet:hover {
+  background-color: rgb(19, 187, 19);
 }
 .close {
   cursor: pointer;
   display: flex;
   justify-content: center;
+}
+.bet-table {
+  display: flex;
+  justify-content: center;
+}
+.bet-table-content {
+  width: 40%;
+  background-color: rgba(0, 128, 0, 0.308);
+  border-radius: 10px;
 }
