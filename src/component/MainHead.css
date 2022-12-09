@@ -1,7 +1,7 @@
 .main-head {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 .trades {

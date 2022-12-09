@@ -6,7 +6,7 @@ import Footer from "../component/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="body">
       <div className="App">
         <MainHead />
         <div className="main-content">
@@ -15,6 +15,6 @@ export default function Home() {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }

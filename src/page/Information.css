@@ -1,0 +1,60 @@
+.Information-body {
+  background-image: url("../image/heroes_full.jpg");
+  background-size: cover;
+}
+.Information {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.Information-left {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.Information-right {
+  width: 25%;
+  color: white;
+}
+.Information-left-items {
+  width: 18%;
+  background-color: rgba(255, 255, 255, 0.651);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.Information-bottom {
+  margin-top: 30px;
+  color: white;
+}
+.Information-bottom-header {
+  text-align: center;
+}
+.Information-bottom-main {
+}
+.Information-bottom-main-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.Information-bottom-main-item {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.item-number {
+  background-color: rgb(0, 128, 0);
+  border-radius: 50%;
+  width: 80px;
+  height: 40px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

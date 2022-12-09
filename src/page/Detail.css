@@ -1,7 +1,12 @@
+.Detail {
+  background-image: url("../image/radiant_dire5.jpg");
+  background-size: cover;
+  height: 100vh;
+}
 .center {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .spinner-center {
   position: absolute;
@@ -86,7 +91,7 @@
   background-color: rgb(25, 175, 25);
 }
 .click-request {
-  color: green;
+  color: rgb(7, 97, 7);
   font-size: 20px;
 }
 .place-bet {

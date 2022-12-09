@@ -37,8 +37,13 @@ export default function Detail() {
   }, [id]);
 
   const showModal = () => {
-    setIsModalOpen(true);
+    if (betValue === "") {
+      alert("You forgot value bet");
+    } else {
+      setIsModalOpen(true);
+    }
   };
+
   const handleOk = () => {
     setIsModalOpen(false);
     axios.post(
@@ -56,12 +61,13 @@ export default function Detail() {
         createdAt: new Date().getTime(),
       }
     );
+    navigate("/myBet");
   };
   const handleCancel = () => {
     setIsModalOpen(false);
   };
   return (
-    <div>
+    <div className="Detail">
       {!isLoading ? (
         <div className="center">
           <div className="matchComponent-detail">
@@ -103,7 +109,7 @@ export default function Detail() {
       )}
       {!display.isLogin ? (
         <div className="bet-request" onClick={() => navigate("/login")}>
-          <div className="bet-request-text">To make a bet please sign in</div>
+          <div className="bet-request-text">To make a bet please LOGIN</div>
         </div>
       ) : !!nameTeam ? (
         <div className="bet-table">
@@ -114,7 +120,9 @@ export default function Detail() {
                 placeholder="$"
                 type="number"
                 value={betValue}
-                onChange={(e) => setBetValue(e.target.value)}
+                onChange={(e) => {
+                  setBetValue(e.target.value);
+                }}
                 style={{ width: "30%", height: "60%" }}
               ></input>
             </div>

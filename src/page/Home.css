@@ -1,3 +1,7 @@
+.body {
+  background-image: url("../image/325427-Void-Spirit-Dota-2-4K-iphone-wallpaper.jpg");
+  background-size: cover;
+}
 .main-content {
   display: flex;
   justify-content: space-between;

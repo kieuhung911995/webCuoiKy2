@@ -49,13 +49,17 @@ const MyBetComponent = ({
           </div>
         </div>
       </div>
-      <div className="team-bet">
+      <div className="value-bet">
         <div className="MyBetComponent-header">Bet on</div>
         <div className="MyBetComponent-info">{winningBet}</div>
       </div>
       <div className="value-bet">
         <div className="MyBetComponent-header">Bet Value</div>
         <div className="MyBetComponent-info">{valueBet}$</div>
+      </div>
+      <div className="value-bet">
+        <div className="MyBetComponent-header">Result</div>
+        <div className="MyBetComponent-info"></div>
       </div>
     </div>
   );
@@ -77,7 +81,7 @@ const MyBet = () => {
       }
     }
     getMatchData();
-  }, []);
+  }, [betMatchs]);
   return (
     <>
       <div className="myBet">
@@ -98,7 +102,9 @@ const MyBet = () => {
               />
             ))
           ) : (
-            <SpinnerCircular />
+            <SpinnerCircular
+              style={{ position: "absolute", left: "25%", top: "25%" }}
+            />
           )}
         </div>
         <div className="user-balance">

@@ -9,24 +9,54 @@
 }
 .logo-header {
   margin-left: 17px;
-  width: 30%;
+  width: 35%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.my-bet {
-  width: 23%;
+.icons-header {
+  width: 65%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.icon-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.icon-header:hover {
+  color: #6ba908;
+  background-color: rgb(34, 33, 33);
 }
 .login {
-  margin-right: 17px;
+  width: 10%;
+  height: 100%;
+  background-color: #6ba908;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.login:hover {
+  background-color: rgb(34, 33, 33);
+  color: #6ba908;
 }
 .logo-item {
   width: 30%;
   height: auto;
   cursor: pointer;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
 }

@@ -6,6 +6,9 @@ import { DataDisplay } from "../App";
 import { GiPerspectiveDiceSixFacesOne } from "react-icons/gi";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, message, Space } from "antd";
+import { FaUserSecret } from "react-icons/fa";
+import { AiOutlineLogin } from "react-icons/ai";
+import { AiFillTags, AiFillInfoCircle } from "react-icons/ai";
 
 function Header() {
   const display = useContext(DataDisplay);
@@ -38,15 +41,23 @@ function Header() {
           alt="dota2Logo"
           className="logo-item"
         ></img>
-        <img
-          src="./logo/csgoLogo.PNG"
-          alt="csgoLogo"
-          className="logo-item"
-        ></img>
         {display.isLogin ? (
-          <div className="my-bet" onClick={() => navigate("/myBet")}>
-            <GiPerspectiveDiceSixFacesOne size="30px" color="green" />
-            <span>My bets</span>
+          <div className="icons-header">
+            <div className="icon-header" onClick={() => navigate("/myBet")}>
+              <GiPerspectiveDiceSixFacesOne size="30px" color="#6BA908" />
+              <span>My bets</span>
+            </div>
+            <div className="icon-header" onClick={() => navigate("/discount")}>
+              <AiFillTags size="30px" color="#6BA908" />
+              <span>Discounts</span>
+            </div>
+            <div
+              className="icon-header"
+              onClick={() => navigate("/information")}
+            >
+              <AiFillInfoCircle size="30px" color="#6BA908" />
+              <span>How it works</span>
+            </div>
           </div>
         ) : (
           <div className="my-bet"></div>
@@ -54,25 +65,35 @@ function Header() {
       </div>
       {!display.isLogin ? (
         <div className="login" onClick={() => navigate("/login")}>
-          LOGIN
+          <>
+            <AiOutlineLogin style={{ fontSize: "30px" }} />
+            LOGIN
+          </>
         </div>
       ) : (
-        <Dropdown
-          menu={{
-            items,
-            onClick,
-          }}
-        >
-          <div
-            style={{ cursor: "pointer" }}
-            onClick={(e) => e.preventDefault()}
+        <div style={{ marginRight: "17px" }}>
+          <Dropdown
+            menu={{
+              items,
+              onClick,
+            }}
           >
-            <Space>
-              Đã Login
-              <DownOutlined />
-            </Space>
-          </div>
-        </Dropdown>
+            <div
+              style={{ cursor: "pointer" }}
+              onClick={(e) => e.preventDefault()}
+            >
+              <Space>
+                <div className="user-info">
+                  <FaUserSecret
+                    style={{ fontSize: "30px", color: "#6BA908" }}
+                  />
+                  Hello, {JSON.parse(localStorage.getItem("account")).userName}
+                </div>
+                <DownOutlined />
+              </Space>
+            </div>
+          </Dropdown>
+        </div>
       )}
     </div>
   );

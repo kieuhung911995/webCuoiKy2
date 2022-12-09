@@ -1,16 +1,23 @@
-.trade {
+.trade-body {
   width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 18px;
+}
+.trade {
   height: fit-content;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: 18px;
 }
 .trade-items {
   width: 43%;
   height: 120px;
   border-style: solid;
-  border-color: gray;
+  background-color: rgba(0, 0, 0, 0.555);
+  border-color: black;
   border-width: 0.5px;
   display: flex;
   justify-content: space-around;
@@ -34,4 +41,13 @@
   background-color: rgba(255, 255, 255, 0.349);
   font-size: 13px;
   text-align: center;
+}
+.trade-support {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.651);
+  width: 86%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }

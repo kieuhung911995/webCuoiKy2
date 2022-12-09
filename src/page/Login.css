@@ -1,14 +1,23 @@
 .form {
+  background-image: url("../image/detail.jpg");
+  background-size: cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 30px;
 }
 .button {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.849);
   color: white;
   cursor: pointer;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
-  border-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.button:hover {
+  background-color: rgb(30, 184, 30);
 }

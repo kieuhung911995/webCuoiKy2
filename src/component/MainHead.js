@@ -18,13 +18,13 @@ function MainHead() {
   return (
     <div className="main-head">
       <div className="trades">
-        <GiTrade size="30px" color="gray" />
-        <span>Trades</span>
+        <GiTrade size="30px" color="#6BA908" />
+        <span style={{ fontSize: "20px", color: "white" }}>Trades</span>
       </div>
       <div className="bets">
         <div className="bet">
-          <GiPerspectiveDiceSixFacesOne size="30px" color="gray" />
-          <span>Bets</span>
+          <GiPerspectiveDiceSixFacesOne size="30px" color="#6BA908" />
+          <span style={{ fontSize: "20px", color: "white" }}>Bets</span>
         </div>
         <div className="bet-date">
           <div className={display.isComing} onClick={handleChooseOptionComing}>

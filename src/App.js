@@ -6,6 +6,8 @@ import Login from "./page/Login";
 import Detail from "./page/Detail";
 import MyBet from "./page/MyBet";
 import Header from "./component/Header";
+import Discount from "./page/Discount";
+import Information from "./page/Information";
 
 export const DataDisplay = createContext();
 
@@ -35,6 +37,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/match/:id" element={<Detail />} />
         <Route path="/myBet" element={<MyBet />} />
+        <Route path="/discount" element={<Discount />} />
+        <Route path="/information" element={<Information />} />
       </Routes>
     </DataDisplay.Provider>
   );

@@ -10,14 +10,17 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <div className="created">Created by:</div>
+      <div className="created">
+        <i style={{ color: "white" }}>@Created by: Hưng, Huy and Đức</i>
+      </div>
       <div className="contact">
-        <SiSteam size="30px" />
-        <AiFillTwitterCircle size="34px" />
-        <BsFacebook size="30px" />
-        <BsReddit size="30px" />
-        <SiDiscord size="30px" />
-        <FaInstagramSquare size="30px" />
+        <i style={{ color: "white" }}>Contact us:</i>
+        <SiSteam size="30px" className="contact-icons" />
+        <AiFillTwitterCircle size="34px" className="contact-icons" />
+        <BsFacebook size="30px" className="contact-icons" />
+        <BsReddit size="30px" className="contact-icons" />
+        <SiDiscord size="30px" className="contact-icons" />
+        <FaInstagramSquare size="30px" className="contact-icons" />
       </div>
     </div>
   );

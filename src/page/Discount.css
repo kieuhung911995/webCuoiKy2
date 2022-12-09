@@ -1,0 +1,53 @@
+.discount {
+  background-image: url("../image/R.jpg");
+  background-size: cover;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.discount-items {
+  width: 30%;
+}
+.discount-items-header {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+.discount-items-table {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.637);
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.discount-items-table-header {
+  margin-left: 20px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+.discount-items-table-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.discountComponent {
+  width: 85%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #887a7adc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.discountComponent2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
